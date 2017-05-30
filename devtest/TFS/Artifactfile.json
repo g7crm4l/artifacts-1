@@ -13,7 +13,7 @@
    
         
         "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./startInstall.ps1 -PackageList ', 'Team Foundation Server update1', '\"')]"
-    
+          "commandToExecute": "powershell.exe . . . -File './scripts/startInstall.ps1'"
 
     }
 }
