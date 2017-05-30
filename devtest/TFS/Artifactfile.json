@@ -10,7 +10,7 @@
     "iconUri": "",
     "targetOsType": "Windows",
     "runCommand": {
-          "commandToExecute": "powershell.exe . . . -File '.C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.8\Downloads\0\ArtifactDemoVM1.131406104682714216\TFS1466924256\scripts\startInstall.ps1"
+          "commandToExecute": "powershell.exe . . . -File 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.8\Downloads\0\ArtifactDemoVM1.131406104682714216\TFS1466924256\scripts\startInstall.ps1"
 
     }
 }
