@@ -6,11 +6,7 @@ start-sleep -seconds "10"
 # Create temp directory
 New-Item "C:\SoftwaresDump\QTP12.5" -ItemType Directory -ErrorAction SilentlyContinue
 # Download
-(New-Object System.Net.WebClient).DownloadFile("$SoftwareWebLink", "$SoftwarePath")
 (New-Object System.Net.WebClient).DownloadFile("http://artifacts.g7crm4l.org/softwares/QTP12.5/tfssetup.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe")
-Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
-start-sleep -seconds "100"
-
-
-
-
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" 
+start-sleep -seconds "30"
+Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
