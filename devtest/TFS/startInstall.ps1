@@ -6,14 +6,8 @@ $SoftwarePath = "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe"
 New-Item "C:\SoftwaresDump\QTP12.5" -ItemType Directory -ErrorAction SilentlyContinue
 # Download
 (New-Object System.Net.WebClient).DownloadFile("$SoftwareWebLink", "$SoftwarePath")
-
-
-
 (New-Object System.Net.WebClient).DownloadFile("http://artifacts.g7crm4l.org/softwares/QTP12.5/tfssetup.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe")
-
-
-
-# Install
-
+# Invoke Installion with powershell
 Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe"
+start-sleep -seconds "20"
 Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
