@@ -10,6 +10,6 @@ New-Item "C:\SoftwaresDump\QTP12.5" -ItemType Directory -ErrorAction SilentlyCon
 start-sleep -seconds "100"
 
 # Invoke Installion with powershell
-Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe"
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
 
-Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
