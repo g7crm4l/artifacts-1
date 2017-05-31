@@ -1,4 +1,4 @@
-﻿$NewDIR = "C:\SoftwaresDump\QTP12.5"
+$NewDIR = "C:\SoftwaresDump\QTP12.5"
 $SoftwareWebLink = "https://download.microsoft.com/download/a/e/1/ae184ba4-5926-4be6-a036-17b318960453/tfsserver2017.1.exe"
 $SoftwarePath = "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe"
 
