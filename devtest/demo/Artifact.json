@@ -9,7 +9,7 @@
     "iconUri": "",
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File startInstall.ps1"
+        "commandToExecute": "cmd -ExecutionPolicy bypass -File start.bat"
 
     }
 }
