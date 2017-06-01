@@ -1,10 +1,10 @@
 { "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-    "title": "Team Foundation Server update1",
-    "publisher": "testtfs",
-    "description": "Install TFS with default options",
+    "title": "bat file",
+    "publisher": "batfile",
+    "description": "batfile",
     "tags": [
         "Windows",
-        "Team Foundation Server update1"
+        "bat file"
     ],
     "iconUri": "",
     "targetOsType": "Windows",
