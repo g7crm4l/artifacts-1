@@ -19,7 +19,7 @@ New-Item "C:\SoftwaresDump\QTP12.5" -ItemType Directory -ErrorAction SilentlyCon
 
 # Install
 
-Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" -ArgumentList "/S /v""/qn""" -Wait  
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" 
 
-Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" -ArgumentList "/S /v""/qn""" -Wait  
+Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" 
 
