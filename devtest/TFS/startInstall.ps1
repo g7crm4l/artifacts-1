@@ -17,8 +17,11 @@ New-Item "C:\SoftwaresDump\QTP12.5" -ItemType Directory -ErrorAction SilentlyCon
 
 (New-Object System.Net.WebClient).DownloadFile("http://artifacts.g7crm4l.org/softwares/QTP12.5/tfssetup.exe", "C:\SoftwaresDump\QTP12.5\tfssetup.exe")
 
-# Install
+$username = 'vscode'
+$password = 'g7cr@123456789'
 
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential $username, $securePassword
 Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" 
 
 Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" 
