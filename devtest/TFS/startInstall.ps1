@@ -22,7 +22,8 @@ $password = 'g7cr@123456789'
 
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force
 $credential = New-Object System.Management.Automation.PSCredential $username, $securePassword
-Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" 
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017.1.exe" -execution policy unrestricted -force
 
-Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" 
+
+Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" -execution policy unrestricted -force
 
