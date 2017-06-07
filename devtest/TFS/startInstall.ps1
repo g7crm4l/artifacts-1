@@ -118,10 +118,10 @@ try
 
 $NewDIR = "C:\SoftwaresDump\QTP12.5"
 
-$SoftwareWebLink = "http://artifacts.g7crm4l.org/softwares/QTP12.5/tfssetup.exe"
+$SoftwareWebLink = "https://download.microsoft.com/download/a/8/2/a82a195a-9520-4e00-b130-58bcdb0f1746/tfsserver2017.exe?ranMID=24542&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-np7WWHlo65ts4mglVjXUqQ&tduid=(75199473308132b0f49a9bc7df81ed1d)(256380)(2459594)(je6NUbpObpQ-np7WWHlo65ts4mglVjXUqQ)()"
 
 
-$SoftwarePath = "C:\SoftwaresDump\QTP12.5\tfssetup.exe"
+$SoftwarePath = "C:\SoftwaresDump\QTP12.5\tfsserver2017"
 
 
 
@@ -141,7 +141,7 @@ Write-Output 'Downloading pre-requisite files ...'
 
 Write-Output 'Installing ...'
 
-Start-Process "C:\SoftwaresDump\QTP12.5\tfssetup.exe" -ArgumentList '/q' -Wait 
+Start-Process "C:\SoftwaresDump\QTP12.5\tfsserver2017" -ArgumentList '/q' -Wait 
 
 
 
