@@ -1,0 +1,14 @@
+m4l00s1_image
+Windows 2012
+Google Chrome
+Firefox
+7Zip
+Adobe Reader
+MS Build 2017
+VS 2015 Pro Full
+IIS 8 +
+MS SQL Express 2016
+Java 1.8
+Android SDK for VS
+Xamarin Latest
+bcdedit /set hypervisorlaunchtype off 
