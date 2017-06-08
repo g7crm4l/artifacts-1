@@ -57,19 +57,19 @@ trap
 
 try
 {
-    $NewDIR = "C:\SoftwaresDump"
-    $SoftwareWebLink = "https://download.microsoft.com/download/c/0/4/c04e3eff-c8e5-486c-af04-b85abb693cc7/vs_professional.exe"
-    $SoftwarePath = "C:\SoftwaresDump\vs_professional.exe"
+    $NewDIR = "C:\SoftwaresDump\xamarin"
+    $SoftwareWebLink = "http://artifacts.g7crm4l.org/softwares/Microsoft%20Softwares/Xamarin.VisualStudio_4.0.1.96.msi"
+    $SoftwarePath = "C:\SoftwaresDump\xamarin\Xamarin.VisualStudio_4.0.1.96.msi"
 
     Write-Output 'Preparing temp directory ...'
-    New-Item "C:\SoftwaresDump" -ItemType Directory -Force | Out-Null
+    New-Item "C:\SoftwaresDump\xamarin\" -ItemType Directory -Force | Out-Null
 
     Write-Output 'Downloading pre-requisite files ...'
     (New-Object System.Net.WebClient).DownloadFile("$SoftwareWebLink", "$SoftwarePath")
    
 
  Write-Output 'Installing ...'
-Start-Process "C:\SoftwaresDump\vs_professional.exe" -ArgumentList '/q' -Wait 
+Start-Process "C:\SoftwaresDump\xamarin\Xamarin.VisualStudio_4.0.1.96.msi" -ArgumentList '/q' -Wait 
 
     
 
@@ -79,5 +79,3 @@ finally
 {
     popd
 }
-
-

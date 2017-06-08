@@ -4,11 +4,11 @@
 "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
 
 
-"title": "vs_professional",
+"title": "Oracle",
 
-"publisher": "vs_professional",
+"publisher": "Oracle",
 
-"description": "Install  vs_professional with default options",
+"description": "Install oracle with default options",
 
 "tags": [
 
